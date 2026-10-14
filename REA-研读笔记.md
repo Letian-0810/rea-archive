@@ -2,7 +2,7 @@
 
 > 研读时间：2026-10-14（Asia/Shanghai）  
 > 仓库：[morluto/rea](https://github.com/morluto/rea)  
-> 固定源码版本：[main @ `96e7c22a9cc917448ed080e11cde4dacd2a2d70a`](https://github.com/morluto/rea/tree/96e7c22a9cc917448ed080e11cde4dacd2a2d70a)  
+> 固定源码版本：[main @ `96e7c22a9cc917448ed080e11cde4dacd2a2d70a`](REA/)  
 > npm 包：`rea-agents` 6.4.0；许可证：MIT  
 > GitHub API 查询时为 216,806 stars、53,536 forks；星数会持续变化。
 
@@ -29,11 +29,11 @@ REA 的执行和主要分析都在本机。这个“local-only”定位不代表
 | 资源与固件 | Apple/Android 包资源、plist、文件清单与摘要、固件区域和提取结果 | Binwalk/Unblob 等按平台提供；提取与原生分析分层衔接 |
 | 其他格式/协议 | WASM、EVM bytecode、SQLite、HAR/SAZ、PCAP、逻辑信号记录、进程行为 | WABT、TShark、sigrok-cli、Node SQLite 等有明确版本/平台要求 |
 
-完整支持矩阵和逐项前提见 [README 的 What you can analyze](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/README.md#what-you-can-analyze)；不要把“有工具”理解成任意系统、格式或引擎组合都已支持。
+完整支持矩阵和逐项前提见 [README 的 What you can analyze](REA/README.md#what-you-can-analyze)；不要把“有工具”理解成任意系统、格式或引擎组合都已支持。
 
 ## 架构：外层适配，内层共享
 
-仓库自己维护的架构图是最好的入口：[docs/architecture.mermaid](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/architecture.mermaid)。依赖大致从纯语义和合同向外流动：
+仓库自己维护的架构图是最好的入口：[docs/architecture.mermaid](REA/docs/architecture.mermaid)。依赖大致从纯语义和合同向外流动：
 
 ```text
 用户 / Agent
@@ -73,11 +73,11 @@ REA 的执行和主要分析都在本机。这个“local-only”定位不代表
 
 这条链的关键文件：
 
-- [src/server/registerOfficialTools.ts](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/server/registerOfficialTools.ts)
-- [src/server/toolResult.ts](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/server/toolResult.ts)
-- [src/domain/evidence.ts](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/domain/evidence.ts)
-- [src/application/investigation/EvidenceLedger.ts](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/application/investigation/EvidenceLedger.ts)
-- [MCP runtime contracts](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/mcp-contracts.md)
+- [src/server/registerOfficialTools.ts](REA/src/server/registerOfficialTools.ts)
+- [src/server/toolResult.ts](REA/src/server/toolResult.ts)
+- [src/domain/evidence.ts](REA/src/domain/evidence.ts)
+- [src/application/investigation/EvidenceLedger.ts](REA/src/application/investigation/EvidenceLedger.ts)
+- [MCP runtime contracts](REA/docs/mcp-contracts.md)
 
 ## 关键抽象：把“证据”和“未知”做成一等数据
 
@@ -117,7 +117,7 @@ REA 也持久化“仍未回答的问题”，而非让遗漏被误读为否定�
 - 离线/格式分析：pwntools/pwndbg、WABT、EVMole、GNU objdump、Rizin/GDB、.NET metadata、JADX/Apktool、Binwalk/Unblob、TShark/sigrok、SQLite 等。
 - Web/app 观察：CDP/Playwright、Electron、V8 Inspector、source-map 解码与 JS artifact reconstruction。
 
-根 [AGENTS.md](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/AGENTS.md) 和 [CONTRIBUTING.md](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/CONTRIBUTING.md) 明确约束了集成范围：支持一般软件结构/行为逆向和证据报告；不集成专门绕过商用保护、anti-debug/anti-instrumentation、DRM/license/access-control、攻击载荷自动化、凭据窃取、隐蔽持久化、未授权访问或批量攻击工作流。对会运行目标、注入、改内存/寄存器或恢复保护的能力，先判断真实权限、副作用、验证和维护范围；问题未解决时按 fail-closed 处理。
+根 [AGENTS.md](REA/AGENTS.md) 和 [CONTRIBUTING.md](REA/CONTRIBUTING.md) 明确约束了集成范围：支持一般软件结构/行为逆向和证据报告；不集成专门绕过商用保护、anti-debug/anti-instrumentation、DRM/license/access-control、攻击载荷自动化、凭据窃取、隐蔽持久化、未授权访问或批量攻击工作流。对会运行目标、注入、改内存/寄存器或恢复保护的能力，先判断真实权限、副作用、验证和维护范围；问题未解决时按 fail-closed 处理。
 
 进程管理也做成基础设施：复用 `src/process/` 的进程所有权/身份、deadline、输出/文件上限、private runtime root 和清理机制。PID 加可执行路径不足以证明进程仍是原来的进程。资源清理失败不能装作成功，也不能丢掉 cleanup ownership。安装配置应是 additive、idempotent、有备份；`rea setup` 展示计划并要求批准后才改客户端配置或安装 Hopper，不会顺带安装/升级 Node、Java、Homebrew、Ghidra 等无关软件。Ghidra/IDA 由用户自备。
 
@@ -140,13 +140,13 @@ TypeScript 是主体；另有大量 MJS 构建/验证脚本和 Python、Java、S
 
 ## 建议的代码阅读顺序
 
-1. 产品边界和能力：[`README.md`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/README.md)、[`AGENTS.md`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/AGENTS.md)、[`CONTRIBUTING.md`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/CONTRIBUTING.md)。
-2. 分层与依赖：[`docs/architecture.mermaid`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/architecture.mermaid)。
-3. 两个入口：[`scripts/rea.mjs`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/scripts/rea.mjs)、[`src/main.ts`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/main.ts)、[`src/cli.ts`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/cli.ts)。
-4. provider 与 session：[`src/composition/binary.ts`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/composition/binary.ts)、`src/application/binary/AnalysisProviderRegistry.ts`、`BinarySession.ts`、`SessionProviderRouter.ts`。
-5. MCP 合同到运行时：`src/contracts/officialToolContracts.ts`、[`src/server/registerOfficialTools.ts`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/server/registerOfficialTools.ts)、`src/server/createServer.ts`、[`docs/mcp-contracts.md`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/mcp-contracts.md)。
-6. 可信记录：[`src/domain/evidence.ts`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/src/domain/evidence.ts)、`analysisProfile.ts`、`evidenceBundle.ts`、`residualUnknown.ts`、`src/application/investigation/EvidenceLedger.ts`。
-7. 再按目标选一条垂直链深入：[`docs/native-investigation.md`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/native-investigation.md)、[`docs/javascript-application-workflows.md`](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/javascript-application-workflows.md)、`docs/android-analysis.md`、`docs/firmware-analysis.md` 等，再跟到 provider 与 conformance fixtures。
+1. 产品边界和能力：[`README.md`](REA/README.md)、[`AGENTS.md`](REA/AGENTS.md)、[`CONTRIBUTING.md`](REA/CONTRIBUTING.md)。
+2. 分层与依赖：[`docs/architecture.mermaid`](REA/docs/architecture.mermaid)。
+3. 两个入口：[`scripts/rea.mjs`](REA/scripts/rea.mjs)、[`src/main.ts`](REA/src/main.ts)、[`src/cli.ts`](REA/src/cli.ts)。
+4. provider 与 session：[`src/composition/binary.ts`](REA/src/composition/binary.ts)、`src/application/binary/AnalysisProviderRegistry.ts`、`BinarySession.ts`、`SessionProviderRouter.ts`。
+5. MCP 合同到运行时：`src/contracts/officialToolContracts.ts`、[`src/server/registerOfficialTools.ts`](REA/src/server/registerOfficialTools.ts)、`src/server/createServer.ts`、[`docs/mcp-contracts.md`](REA/docs/mcp-contracts.md)。
+6. 可信记录：[`src/domain/evidence.ts`](REA/src/domain/evidence.ts)、`analysisProfile.ts`、`evidenceBundle.ts`、`residualUnknown.ts`、`src/application/investigation/EvidenceLedger.ts`。
+7. 再按目标选一条垂直链深入：[`docs/native-investigation.md`](REA/docs/native-investigation.md)、[`docs/javascript-application-workflows.md`](REA/docs/javascript-application-workflows.md)、`docs/android-analysis.md`、`docs/firmware-analysis.md` 等，再跟到 provider 与 conformance fixtures。
 
 ## 这次研读的证据范围与限制
 
@@ -159,8 +159,8 @@ TypeScript 是主体；另有大量 MJS 构建/验证脚本和 Python、Java、S
 
 - [REA GitHub repository](https://github.com/morluto/rea)
 - [REA website](https://rea.tools/)
-- [README at reviewed commit](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/README.md)
-- [Architecture map](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/architecture.mermaid)
-- [MCP runtime contracts](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/mcp-contracts.md)
-- [Tool design guide](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/docs/tool-design.md)
-- [Contributing scope](https://github.com/morluto/rea/blob/96e7c22a9cc917448ed080e11cde4dacd2a2d70a/CONTRIBUTING.md)
+- [README at reviewed commit](REA/README.md)
+- [Architecture map](REA/docs/architecture.mermaid)
+- [MCP runtime contracts](REA/docs/mcp-contracts.md)
+- [Tool design guide](REA/docs/tool-design.md)
+- [Contributing scope](REA/CONTRIBUTING.md)

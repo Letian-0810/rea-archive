@@ -23,12 +23,21 @@ pwsh -NoProfile -File .\recovery\Restore-Local.ps1 -Destination C:\work\rea-rest
 
 恢复目录必须尚不存在。脚本会校验归档、离线安装、应用独立兼容补丁、重新构建，并运行 CLI/MCP 的 JavaScript 与 SQLite 验证。
 
+## 独立恢复验收已通过
+
+已从本仓库重新克隆备份，在恢复阶段不访问原 REA 仓库，完成离线安装、源码构建及核心功能验证。
+
+- [恢复验收结果](verification/github-restore/result.json)
+- [归档、大文件与依赖完整性](verification/github-restore/content-integrity.json)
+- [公开源码逐文件核对](verification/github-source-integrity.json)
+- [实际运行记录](https://github.com/Letian-0810/rea-archive/actions/runs/38561731415)
+
 ## 已验证范围
 
 已在 Windows x64 全新目录完成离线安装、源码构建、CLI/MCP 初始化、静态 JavaScript 分析、SQLite 查询与 Evidence 导出。两份相关上游验收文件合计 11 项通过、1 项按设计跳过。全套测试未完成，停止前存在其他未归因失败；完整外部引擎与其他平台未逐项验证。详见验收记录。
 
 ## 保存范围与署名
 
-当前保存两个固定源码状态，其中主基线在 REA/ 下可直接浏览；另一个正式发布状态作为归档保存。未保存全部历史提交图、所有历史 release、issue 或 PR。REA 内的子模块保留固定 Git 引用，其实际源码和 LFS 文件也另存为本仓库中的归档与内容实体。
+当前保存两个固定源码状态，其中主基线在 REA/ 下可直接浏览；另一个正式发布状态作为归档保存。未保存全部历史提交图、所有历史 release、issue 或 PR。5 个子模块按固定提交保存为完整归档，LFS 文件另存实际内容实体；原始 gitlink 信息保存在 provenance/upstream-tree.json。
 
 REA 使用原 MIT 许可证，见 [LICENSE](LICENSE) 与 [REA/LICENSE](REA/LICENSE)。第三方组件保留各自原有许可与通知。

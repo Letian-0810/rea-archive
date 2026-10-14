@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "repository": "Letian-0810/rea-archive",
+  "upstream_commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+  "preserved_source_tree": "10665532d3f3a8affacaae7572197e6f4afbe3c8",
+  "checked_source_files": 3722,
+  "content_mismatches": [],
+  "mode_mismatches": [],
+  "extra_files": [],
+  "truncated": false,
+  "submodule_sources": "archives/",
+  "submodule_fixed_commits": "provenance/upstream-tree.json",
+  "lfs_objects": 892
+}
