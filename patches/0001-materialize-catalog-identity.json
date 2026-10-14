@@ -1,0 +1,11 @@
+{
+  "id": "0001-materialize-catalog-identity",
+  "path": "src/serverIdentity.ts",
+  "upstream_commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+  "before_sha256": "169621ce87a031b4d0a5a06bc5187fa928e6db554c8542b336babbf9c2b639b1",
+  "after_sha256": "455027688409201920dd573653796bfcf83f8e4913be2779b1968d7b4451ac49",
+  "find": "    catalog: CATALOG_IDENTITY,",
+  "replace": "    catalog: {\n      counts: CATALOG_IDENTITY.counts,\n      digests: CATALOG_IDENTITY.digests,\n    },",
+  "reason": "createServerIdentity returned CATALOG_IDENTITY with an enumerable digests getter; binary_session strict JSON validation rejects accessors. Materialize counts and digests at the producing boundary without changing their values.",
+  "failing_acceptance_test": "tests/acceptance/sqliteDatabaseCli.test.ts: discovers SQLite runtime availability before inspecting a database through CLI and MCP"
+}

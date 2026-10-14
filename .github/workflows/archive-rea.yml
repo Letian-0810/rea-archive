@@ -1,0 +1,59 @@
+name: Preserve and verify REA
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/archive-rea.yml'
+      - 'recovery/Fetch-Archive.mjs'
+      - 'recovery/Prepare-Cloud.ps1'
+      - 'recovery/Verify-Remote.ps1'
+      - 'provenance/archive-downloads.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: preserve-rea
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: windows-2022
+    timeout-minutes: 35
+    steps:
+      - name: Check out archive repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 1
+      - name: Download fixed artifacts, verify source identities, and preserve dependencies
+        shell: pwsh
+        run: ./recovery/Prepare-Cloud.ps1
+      - name: Publish complete fixed-version backup
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config core.autocrlf false
+          git config pack.threads 1
+          git config pack.windowMemory 16m
+          git add -f -- REA
+          git add -- archives runtimes lfs npm-cache/_cacache provenance verification
+          if ($LASTEXITCODE -ne 0) { throw 'Staging backup failed.' }
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 1) {
+            git commit -m 'Preserve REA fixed source, submodules, LFS objects and offline dependencies'
+            if ($LASTEXITCODE -ne 0) { throw 'Backup commit failed.' }
+            git push origin HEAD:main
+            if ($LASTEXITCODE -ne 0) { throw 'Backup push failed.' }
+          }
+      - name: Recover independently from a fresh clone of this repository
+        shell: pwsh
+        run: ./recovery/Verify-Remote.ps1
+      - name: Publish recovery evidence
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          git add -- verification/github-restore
+          git commit -m 'Record successful offline recovery from user repository'
+          if ($LASTEXITCODE -ne 0) { throw 'Evidence commit failed.' }
+          git push origin HEAD:main
+          if ($LASTEXITCODE -ne 0) { throw 'Evidence push failed.' }

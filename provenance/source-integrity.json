@@ -1,0 +1,12 @@
+{
+  "commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+  "verified_blobs": 3722,
+  "raw_equal_blobs": 3719,
+  "normalized_per_gitattributes": [
+    "tests/fixtures/captureGhidraLaunch.cmd",
+    "tests/fixtures/pcap/capinfos-stub.cmd",
+    "tests/fixtures/pcap/tshark-stub.cmd"
+  ],
+  "mismatches": [],
+  "truncated": false
+}

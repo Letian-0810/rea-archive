@@ -1,0 +1,13 @@
+{
+  "archives/rea-source-96e7c22a9cc917448ed080e11cde4dacd2a2d70a.zip": "https://codeload.github.com/morluto/rea/zip/96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+  "archives/binwalk-4fdab3d464d97b68e0af9088df3f9e2e1545b21c.zip": "https://codeload.github.com/ReFirmLabs/binwalk/zip/4fdab3d464d97b68e0af9088df3f9e2e1545b21c",
+  "archives/ghidra-nativeaot-effeb734fc570c32650f88b159608979dc7b423e.zip": "https://codeload.github.com/Washi1337/ghidra-nativeaot/zip/effeb734fc570c32650f88b159608979dc7b423e",
+  "archives/jadx-headless-mcp-5844800a486d2248fa949b74c9896285f5b54de2.zip": "https://codeload.github.com/1013503897/jadx-headless-mcp/zip/5844800a486d2248fa949b74c9896285f5b54de2",
+  "archives/unblob-1fcc7a0a584a70a96c31f5a276c20944d199a089.tar.gz": "https://codeload.github.com/onekey-sec/unblob/tar.gz/1fcc7a0a584a70a96c31f5a276c20944d199a089",
+  "archives/wakaru-8219bf5016a063d7fb215101a8c45d5959ec733f.zip": "https://codeload.github.com/pionxzh/wakaru/zip/8219bf5016a063d7fb215101a8c45d5959ec733f",
+  "runtimes/node-v24.18.0-win-x64.zip": "https://nodejs.org/dist/v24.18.0/node-v24.18.0-win-x64.zip",
+  "runtimes/npm-11.16.0.tgz": "https://registry.npmjs.org/npm/-/npm-11.16.0.tgz",
+  "archives/frida-v17.23.2-napi-v8-win32-x64.tar.gz": "https://github.com/frida/frida/releases/download/17.23.2/frida-v17.23.2-napi-v8-win32-x64.tar.gz",
+  "archives/rea-agents-6.4.0.tgz": "https://registry.npmjs.org/rea-agents/-/rea-agents-6.4.0.tgz",
+  "archives/rea-release-source-a56f7bb668ab23fec8d33f7af353ac7ed2fe1895.zip": "https://codeload.github.com/morluto/rea/zip/a56f7bb668ab23fec8d33f7af353ac7ed2fe1895"
+}

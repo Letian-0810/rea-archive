@@ -1,0 +1,56 @@
+
+> rea-agents@6.4.0 test:focused
+> node scripts/run-development-tests.mjs focused tests/acceptance/applications/applicationManifestRoots.test.ts tests/acceptance/sqliteDatabaseCli.test.ts
+
+Focused tests: tests/acceptance/applications/applicationManifestRoots.test.ts, tests/acceptance/sqliteDatabaseCli.test.ts
+
+   • turbo 2.11.7
+   • Running artifacts:skills
+   • Remote caching disabled
+
+metadata:check: cache hit, replaying logs b12c06a96bdae2a2
+metadata:check: 
+metadata:check: > rea-agents@6.4.0 metadata:check
+metadata:check: > node scripts/generate-package-metadata.mjs --check
+metadata:check: 
+compile: cache miss, executing 2bb7004a95306294
+compile: 
+compile: > rea-agents@6.4.0 compile
+compile: > node scripts/clean-build-output.mjs && tsc -p tsconfig.build.json && node scripts/bundle-runtime.mjs
+compile: 
+compile: [33m[INEFFECTIVE_DYNAMIC_IMPORT] [0mdist/composition/binary.js is dynamically imported by dist/composition/directAnalysis.js but also statically imported by dist/main.js, dynamic import will not move module into another chunk.
+compile: 
+compile: [33m[INEFFECTIVE_DYNAMIC_IMPORT] [0mdist/dotnet/ManagedStaticProvider.js is dynamically imported by dist/composition/auxiliaryAnalysisProviders.js but also statically imported by dist/composition/binary.js, dynamic import will not move module into another chunk.
+compile: 
+artifacts:skills: cache miss, executing 7dcb2c390239f3f1
+artifacts:skills: 
+artifacts:skills: > rea-agents@6.4.0 artifacts:skills
+artifacts:skills: > node scripts/generate-skill-metadata.mjs
+artifacts:skills: 
+
+ Tasks:    3 successful, 3 total
+Cached:    1 cached, 3 total
+  Time:    10.011s 
+
+
+ RUN  v5.0.3 <REA_BUNDLE>/restored-offline/source
+
+ ✓ |acceptance| tests/acceptance/applications/applicationManifestRoots.test.ts (3 tests) 5380ms
+   ✓ keeps dependency manifests out of application roots and Electron entries through CLI 1783ms
+   ✓ keeps dependency manifests out of application roots and Electron entries through stdio MCP 2450ms
+   ✓ keeps the artifact root when only dependency manifests are present 1146ms
+ ✓ |acceptance| tests/acceptance/sqliteDatabaseCli.test.ts (9 tests | 1 skipped) 23079ms
+   ✓ bounds default context and projects exact columns without evaluating unrelated cells 3738ms
+   ✓ discovers SQLite runtime availability before inspecting a database through CLI and MCP 2924ms
+   ✓ accepts small samples above 1000 rows within the real resource budgets 3267ms
+   ✓ inspects a real DELETE SQLite schema and lossless selected records identically through CLI and MCP 2268ms
+   ✓ inspects a real PERSIST SQLite schema and lossless selected records identically through CLI and MCP 2279ms
+   ✓ inspects a real TRUNCATE SQLite schema and lossless selected records identically through CLI and MCP 2173ms
+   ✓ includes uncheckpointed committed WAL data without modifying the source database or sidecars 2239ms
+   ✓ returns actionable public errors for corrupt input, unknown or ambiguous tables and invalid record choices 4189ms
+
+ Test Files  2 passed (2)
+      Tests  11 passed | 1 skipped (12)
+   Start at  14:45:22
+   Duration  24.14s (tests 95%, import 4%, transform 1%)
+

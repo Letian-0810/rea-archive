@@ -1,0 +1,34 @@
+{
+  "node": "v24.18.0",
+  "reviewed_commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+  "source": "<RESTORED_DIRECTORY>/source",
+  "offline_dependency_install": true,
+  "source_build": true,
+  "cli_help": true,
+  "local_patches": [
+    "0001-materialize-catalog-identity"
+  ],
+  "cli_static_javascript": {
+    "evidence_id": "ev_dffbd3a0ea2d739991cc80388a1562277e44ab0d47685520c8ed39db78646b76",
+    "nodes": 10,
+    "edges": 12,
+    "target_executed": false
+  },
+  "cli_sqlite": {
+    "evidence_id": "ev_33882fee6fb176ae8d035b2eec16975bcaf24588b3470187ca33813cd29bc9f3",
+    "rows": 2
+  },
+  "mcp_advertised_tools": 207,
+  "mcp_session_status": true,
+  "mcp_static_javascript": {
+    "evidence_id": "ev_dffbd3a0ea2d739991cc80388a1562277e44ab0d47685520c8ed39db78646b76",
+    "graph_matches_cli": true
+  },
+  "mcp_sqlite": {
+    "evidence_id": "ev_33882fee6fb176ae8d035b2eec16975bcaf24588b3470187ca33813cd29bc9f3",
+    "rows": 2
+  },
+  "mcp_evidence_bundle": true,
+  "frida_binding_import": true,
+  "passed": true
+}

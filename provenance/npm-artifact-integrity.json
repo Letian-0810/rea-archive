@@ -1,0 +1,16 @@
+[
+  {
+    "path": "archives/rea-agents-6.4.0.tgz",
+    "bytes": 1825761,
+    "integrity": "sha512-Vj1zWfSlna5bphGoaoI/TcVBuYvze9u+OyPC3Shz8YkBqaCTqB4COnnRoX7XDwMpwI24ZlFEel2yEj0k8LTWEQ==",
+    "expected": "sha512-Vj1zWfSlna5bphGoaoI/TcVBuYvze9u+OyPC3Shz8YkBqaCTqB4COnnRoX7XDwMpwI24ZlFEel2yEj0k8LTWEQ==",
+    "match": true
+  },
+  {
+    "path": "runtimes/npm-11.16.0.tgz",
+    "bytes": 2945850,
+    "integrity": "sha512-A74XL8OxmcegZDMWPkWb5bEQppg8HdYwW3rBD2sPoS4UQHVajfaxBkqyzLeJ3wR0kZ+5xoTjItxXaF7eIXUsyw==",
+    "expected": "sha512-A74XL8OxmcegZDMWPkWb5bEQppg8HdYwW3rBD2sPoS4UQHVajfaxBkqyzLeJ3wR0kZ+5xoTjItxXaF7eIXUsyw==",
+    "match": true
+  }
+]

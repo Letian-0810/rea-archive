@@ -1,0 +1,119 @@
+{
+  "platform": "windows-x64",
+  "reviewed_commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+  "artifacts": [
+    {
+      "file": "archives/rea-source-96e7c22a9cc917448ed080e11cde4dacd2a2d70a.zip",
+      "stage": "source",
+      "target": "source",
+      "format": "zip",
+      "stripRoot": true,
+      "commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+      "bytes": 13439316,
+      "sha256": "7b93d7c2e3fc0160dcbe603d47bb8fef5545487ebb822f0b616a6d4d26bcfbd6"
+    },
+    {
+      "file": "archives/binwalk-4fdab3d464d97b68e0af9088df3f9e2e1545b21c.zip",
+      "stage": "source",
+      "target": "source/third_party/binwalk",
+      "format": "zip",
+      "stripRoot": true,
+      "commit": "4fdab3d464d97b68e0af9088df3f9e2e1545b21c",
+      "bytes": 690330,
+      "sha256": "4656f4c03e2ee5ef5542649d9cdf2b8e6cbaadef9ccf0827dac1cf2df55e22cc"
+    },
+    {
+      "file": "archives/ghidra-nativeaot-effeb734fc570c32650f88b159608979dc7b423e.zip",
+      "stage": "source",
+      "target": "source/third_party/ghidra-nativeaot",
+      "format": "zip",
+      "stripRoot": true,
+      "commit": "effeb734fc570c32650f88b159608979dc7b423e",
+      "bytes": 980253,
+      "sha256": "e31bcdc8b9d3af53db94da172b5e3ce6066373c5fc31c4bcef682776b0f64735"
+    },
+    {
+      "file": "archives/jadx-headless-mcp-5844800a486d2248fa949b74c9896285f5b54de2.zip",
+      "stage": "source",
+      "target": "source/third_party/jadx-headless-mcp",
+      "format": "zip",
+      "stripRoot": true,
+      "commit": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "bytes": 139208,
+      "sha256": "a40d863221a6b6d261655f6d3afb195141eef2088689d9fb38c075f1c4755c35"
+    },
+    {
+      "file": "archives/unblob-1fcc7a0a584a70a96c31f5a276c20944d199a089.tar.gz",
+      "stage": "source",
+      "target": "source/third_party/unblob",
+      "format": "tar.gz",
+      "stripRoot": true,
+      "excludeOnWindows": "*/tests/integration",
+      "commit": "1fcc7a0a584a70a96c31f5a276c20944d199a089",
+      "bytes": 707336,
+      "sha256": "efc28936d63e9e3b6c37a960a939c60947cc00a9f6e9378082c0b7f582323d3e"
+    },
+    {
+      "file": "archives/wakaru-8219bf5016a063d7fb215101a8c45d5959ec733f.zip",
+      "stage": "source",
+      "target": "source/third_party/wakaru",
+      "format": "zip",
+      "stripRoot": true,
+      "commit": "8219bf5016a063d7fb215101a8c45d5959ec733f",
+      "bytes": 5424964,
+      "sha256": "bdd018963718ea784f747b77848c99927279a64b363f54d798bfa608e312b449"
+    },
+    {
+      "file": "runtimes/node-v24.18.0-win-x64.zip",
+      "stage": "source",
+      "target": "runtime",
+      "format": "zip",
+      "stripRoot": true,
+      "bytes": 37176245,
+      "sha256": "0ae68406b42d7725661da979b1403ec9926da205c6770827f33aac9d8f26e821"
+    },
+    {
+      "file": "runtimes/npm-11.16.0.tgz",
+      "stage": "source",
+      "target": "npm",
+      "format": "tar.gz",
+      "stripRoot": true,
+      "bytes": 2945850,
+      "sha256": "30fc15697c771002878665c29f49dddde9aa8667fa5719854b2f52d3cd19230b"
+    },
+    {
+      "file": "archives/rea-windows-native-96e7c22a.zip",
+      "stage": "source",
+      "target": "source/native/windows/build",
+      "format": "zip",
+      "stripRoot": false,
+      "commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+      "bytes": 293666,
+      "sha256": "d4cb6ef7a0d1a86b0a1c3c63b74933fbf7eaa8cf518fd22873654f810b06cb38"
+    },
+    {
+      "file": "archives/frida-v17.23.2-napi-v8-win32-x64.tar.gz",
+      "stage": "after-install",
+      "target": "source/node_modules/frida",
+      "format": "tar.gz",
+      "stripRoot": false,
+      "bytes": 50515627,
+      "sha256": "e9dbc08d386130610430137f0bb31d90af7b08c0f5710942d4313368ada930ea"
+    },
+    {
+      "file": "archives/rea-agents-6.4.0.tgz",
+      "stage": "preserve-only",
+      "format": "tar.gz",
+      "bytes": 1825761,
+      "sha256": "59eb1604b8db75f522d4a975c36ce6b4a2ad465e43bad165f9a8f728391db9b8"
+    },
+    {
+      "file": "archives/rea-release-source-a56f7bb668ab23fec8d33f7af353ac7ed2fe1895.zip",
+      "stage": "preserve-only",
+      "format": "zip",
+      "commit": "a56f7bb668ab23fec8d33f7af353ac7ed2fe1895",
+      "bytes": 7491887,
+      "sha256": "f636b8de5ad64358c957ccc6064ebe4f5157b638c365c516c633ffc943802b0d"
+    }
+  ]
+}

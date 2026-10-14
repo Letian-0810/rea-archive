@@ -1,0 +1,13 @@
+{
+  "status": "interrupted",
+  "reason": "User requested low memory and disk use; stopped broad tests",
+  "observed_failures_before_stop": true,
+  "failures_fully_diagnosed": false,
+  "complete_suite_pass_claim": false,
+  "log": "verification/full-suite.log",
+  "focused_suite": {
+    "passed": 11,
+    "skipped": 1,
+    "log": "verification/official-focused-tests-patched.log"
+  }
+}
