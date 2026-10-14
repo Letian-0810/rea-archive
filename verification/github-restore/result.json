@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "user_repository": "Letian-0810/rea-archive",
+  "published_backup_commit": "2ee1a47fd0c962ee7cc5e411d05798697690b6ed",
+  "verified_fresh_clone_commit": "2ee1a47fd0c962ee7cc5e411d05798697690b6ed",
+  "restored_from_user_repository": true,
+  "dependency_install_offline": true,
+  "original_repository_used_during_recovery": false,
+  "workflow_run": "https://github.com/Letian-0810/rea-archive/actions/runs/38561731415",
+  "functional_result": {
+    "node": "v24.18.0",
+    "reviewed_commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+    "source": "<RESTORED_DIRECTORY>/source",
+    "offline_dependency_install": true,
+    "source_build": true,
+    "cli_help": true,
+    "local_patches": [
+      "0001-materialize-catalog-identity"
+    ],
+    "cli_static_javascript": {
+      "evidence_id": "ev_9da95619bc6aef50348bbcf074891e83b00c2996b6f18d8b3929164b9ad1caee",
+      "nodes": 10,
+      "edges": 12,
+      "target_executed": false
+    },
+    "cli_sqlite": {
+      "evidence_id": "ev_0321e3b43fe916eed572e12a56df83443788a051cf8fe1cb71b248392d4d27d9",
+      "rows": 2
+    },
+    "mcp_advertised_tools": 207,
+    "mcp_session_status": true,
+    "mcp_static_javascript": {
+      "evidence_id": "ev_9da95619bc6aef50348bbcf074891e83b00c2996b6f18d8b3929164b9ad1caee",
+      "graph_matches_cli": true
+    },
+    "mcp_sqlite": {
+      "evidence_id": "ev_0321e3b43fe916eed572e12a56df83443788a051cf8fe1cb71b248392d4d27d9",
+      "rows": 2
+    },
+    "mcp_evidence_bundle": true,
+    "frida_binding_import": true,
+    "passed": true
+  }
+}
