@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-14T12:10:55.574Z",
+  "passed": true,
+  "archive_files": 12,
+  "archive_bytes": 121630443,
+  "lfs_pointer_paths": 2506,
+  "lfs_unique_objects": 892,
+  "lfs_bytes": 222010238,
+  "npm_content_objects": 519,
+  "npm_content_bytes": 114779212,
+  "hash_read_chunk_bytes": 65536,
+  "network_used": false
+}
