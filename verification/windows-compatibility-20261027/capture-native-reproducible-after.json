@@ -1,0 +1,10 @@
+{
+  "node": "v24.18.0",
+  "platform": "win32",
+  "architecture": "x64",
+  "testSha256": "232a27b6e75da060eddaede546d7db827800c4b2877260ec0d9fafb8d9a1595b",
+  "scope": "authored fixtures and native oracle only; full CLI/MCP case not run",
+  "passed": true,
+  "authoredFixtures": 2,
+  "fieldsPerFixture": 9
+}

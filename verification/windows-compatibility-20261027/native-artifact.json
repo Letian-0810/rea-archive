@@ -1,0 +1,11 @@
+{
+  "packageVersion": "6.4.0",
+  "platform": "win32",
+  "architecture": "x64",
+  "abiVersion": 1,
+  "nodeApiVersion": 8,
+  "artifact": "rea-windows-x64.node",
+  "artifactSha256": "665c57ab90aef0712a6aafc423c7992a88bf608bea63b370cb30c695900f9aed",
+  "verifiedSha256": "665c57ab90aef0712a6aafc423c7992a88bf608bea63b370cb30c695900f9aed",
+  "sourceArchive": "rea-windows-native-96e7c22a.zip"
+}

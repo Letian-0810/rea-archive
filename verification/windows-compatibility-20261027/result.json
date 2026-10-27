@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "archive_head": "321959e7f2d790337054bb3deef97b4fcc84706d",
+  "baseline_source_commit": "96e7c22a9cc917448ed080e11cde4dacd2a2d70a",
+  "changes": {
+    "kind": "optional test-fixture patch",
+    "sourceFiles": [
+      "src/adb/AdbHostFileName.test.ts",
+      "src/wasm/WabtOutput.test.ts",
+      "tests/acceptance/applications/applicationWorkflowCli.test.ts"
+    ],
+    "productionCodeChanged": false,
+    "recoveryChanged": false,
+    "originalArchivesChanged": false,
+    "originalCatalogPatchPreserved": true
+  },
+  "validation": {
+    "node": "v24.18.0",
+    "platform": "win32",
+    "architecture": "x64",
+    "vitest": "5.0.3",
+    "verifiedVitestTests": 44,
+    "captureNativeFixtures": 2,
+    "captureFullCliMcpCaseRun": false,
+    "fullSuiteRun": false,
+    "restoreAcceptanceRerun": false,
+    "buildRun": false,
+    "completeTypecheckOrLintRun": false,
+    "formatCheckPassed": true,
+    "gitApplyCheckPassed": true
+  },
+  "resources": {
+    "workerCount": 1,
+    "fileParallelism": false,
+    "runnerOldSpaceMiB": 384,
+    "workerOldSpaceMiB": 384,
+    "nativeProbeOldSpaceMiB": 128,
+    "wholeProcessFamilyMemoryMeasured": false,
+    "wholeProcessFamilyMemoryHardLimit": false,
+    "allPackagesPinned": true,
+    "networkDependencyDownloads": 0
+  },
+  "observations": [
+    {
+      "id": "wabt-missing-native",
+      "state": "reproduced",
+      "reason": "Source checkout lacked native/windows/build/manifest.json. Matching archived Windows addon was then hash-verified and supplied only in isolated test copy."
+    },
+    {
+      "id": "wabt-node-startup",
+      "state": "reproduced",
+      "reason": "With native addon present, the Node test substitute failed at ncrypto::CSPRNG(nullptr, 0). Supplying hostEnvironment: process.env to that substitute advanced it past startup; the exact required environment variable was not isolated."
+    },
+    {
+      "id": "wabt-access-denied",
+      "state": "unresolved",
+      "reason": "With host environment supplied, success case still returned AnalysisAccessDeniedError, systemCode EPERM, cleanupIncomplete false. Exploratory test changes were reverted. No real WABT was executed."
+    },
+    {
+      "id": "client-config-write",
+      "state": "unresolved",
+      "reason": "OpenCode roundtrip stopped before command-alignment checks. Diagnostic stderr reported EPERM, syscall rename, moving temporary config to final config in the test sandbox. No user client config was touched. This cannot establish the cause of the historical run."
+    }
+  ],
+  "remaining": [
+    "ESM target-platform semantics",
+    "large inline Evidence command length hypothesis",
+    "client registration command fixtures beyond the blocked write step",
+    "symbolic links and signals",
+    "reference-source Windows capability boundary",
+    "other provider/capture/recording failures"
+  ],
+  "evidenceNotes": [
+    "Machine-specific SOURCE, PINNED_NODE and TEST_TMP paths normalized in published JSON; test names, assertion failures and statuses retained.",
+    "Skipped/pending entries in selected before-runs were excluded by test-name filter, not newly added skips.",
+    "Raw Vitest client JSON does not include console.error; the EPERM rename observation is transcribed from that run stderr.",
+    "Node emitted an ExperimentalWarning for stripTypeScriptTypes in the standalone probe.",
+    "Preparation first encountered missing semver in the reduced dependency set; it was supplied from the existing pinned cache before diagnosis."
+  ]
+}

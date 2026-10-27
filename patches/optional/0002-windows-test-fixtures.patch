@@ -1,0 +1,80 @@
+===================================================================
+--- a/src/adb/AdbHostFileName.test.ts
++++ b/src/adb/AdbHostFileName.test.ts
+@@ -19,7 +19,10 @@
+     ["/data/local/tmp/a*b.txt", "a*b.txt"],
+     ["/data/local/tmp/re\u007fport", "re\u007fport"],
+   ])("accepts the POSIX device path %s", (devicePath, fileName) => {
+-    expect(adbHostFileName(devicePath)).toEqual({ ok: true, fileName });
++    expect(adbHostFileName(devicePath, "linux")).toEqual({
++      ok: true,
++      fileName,
++    });
+   });
+ 
+   it.each([
+
+===================================================================
+--- a/src/wasm/WabtOutput.test.ts
++++ b/src/wasm/WabtOutput.test.ts
+@@ -1,4 +1,5 @@
+ import { readFile } from "node:fs/promises";
++import { resolve } from "node:path";
+ import { expect, it } from "vitest";
+ import { parseWabtOutput } from "./WabtOutput.js";
+ import { parseWabtWat } from "./WabtWat.js";
+@@ -256,10 +257,11 @@
+   expect(() => parseWabtWat("(module) unexpected")).toThrow(/Unexpected/u);
+ });
+ it("keeps exact local, ambiguous URL, computed and unparseable glue distinct", () => {
+-  const candidates = ["/app/module.wasm", "/other/module.wasm"];
++  const localWasm = resolve("app", "module.wasm");
++  const candidates = [localWasm, resolve("other", "module.wasm")];
+   const result = associateWasmGlue(
+     'fetch("./module.wasm"); new URL("https://example.com/module.wasm?x=1", import.meta.url); fetch(`module.wasm`); fetch(name + ".wasm");',
+-    "/app/glue.js",
++    resolve("app", "glue.js"),
+     candidates,
+   );
+   expect(result.parse_status).toBe("complete");
+@@ -267,7 +269,7 @@
+     {
+       value: "./module.wasm",
+       association: "local-path-candidate",
+-      candidate_paths: ["/app/module.wasm"],
++      candidate_paths: [localWasm],
+     },
+     {
+       value: "https://example.com/module.wasm?x=1",
+@@ -277,7 +279,9 @@
+     { value: "module.wasm", association: "local-path-candidate" },
+     { value: ".wasm", association: "unresolved" },
+   ]);
+-  expect(associateWasmGlue("function (", "/glue.js", candidates)).toEqual({
++  expect(
++    associateWasmGlue("function (", resolve("glue.js"), candidates),
++  ).toEqual({
+     parse_status: "failed",
+     references: [],
+   });
+
+===================================================================
+--- a/tests/acceptance/applications/applicationWorkflowCli.test.ts
++++ b/tests/acceptance/applications/applicationWorkflowCli.test.ts
+@@ -3,6 +3,7 @@
+ import { copyFile, mkdir, writeFile } from "node:fs/promises";
+ import { createRequire } from "node:module";
+ import { join, relative, resolve } from "node:path";
++import { pathToFileURL } from "node:url";
+ import { promisify } from "node:util";
+ 
+ import { Client } from "@modelcontextprotocol/client";
+@@ -1233,7 +1234,7 @@
+         "--input-type=module",
+         "--eval",
+         "const module = await import(process.argv[1]); console.log(JSON.stringify(module.default()));",
+-        join(root, String(index), "parser.mjs"),
++        pathToFileURL(join(root, String(index), "parser.mjs")).href,
+       ]);
+       expect(JSON.parse(stdout)).toEqual({
+         kind: "capture-boundary",

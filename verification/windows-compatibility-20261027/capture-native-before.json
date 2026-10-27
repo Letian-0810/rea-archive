@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "code": "ERR_UNSUPPORTED_ESM_URL_SCHEME",
+  "message": "Command failed: <PINNED_NODE> --input-type=module --eval const module = await import(process.argv[1]); console.log(JSON.stringify(module.default())); <TEST_TMP>\\rea-capture-lifetime #DWUqPi\\0\\parser.mjs\nnode:internal/modules/esm/load:193\r\n    throw new ERR_UNSUPPORTED_ESM_URL_SCHEME(parsed, schemes);\r\n          ^\r\n\r\nError [ERR_UNSUPPORTED_ESM_URL_SCHEME]: Onl"
+}

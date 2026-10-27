@@ -1,0 +1,172 @@
+{
+  "numTotalTestSuites": 1,
+  "numPassedTestSuites": 1,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 12,
+  "numPassedTests": 12,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793116002992,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "retains real WABT section ranges, custom section identity and original header output",
+          "status": "passed",
+          "title": "retains real WABT section ranges, custom section identity and original header output",
+          "duration": 3.77049999999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "accepts an unpadded DataCount row and still rejects malformed output and bad ranges",
+          "status": "passed",
+          "title": "accepts an unpadded DataCount row and still rejects malformed output and bad ranges",
+          "duration": 0.7305999999999813,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "bounds section header bytes while accepting a five-byte size LEB",
+          "status": "passed",
+          "title": "bounds section header bytes while accepting a five-byte size LEB",
+          "duration": 0.6415000000000077,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[],\"decoded\":[\"named\"]}",
+          "status": "passed",
+          "title": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[],\"decoded\":[\"named\"]}",
+          "duration": 0.5038999999999874,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[\"named\"],\"decoded\":[]}",
+          "status": "passed",
+          "title": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[\"named\"],\"decoded\":[]}",
+          "duration": 0.3482999999999947,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[\"other\"],\"decoded\":[\"named\"]}",
+          "status": "passed",
+          "title": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[\"other\"],\"decoded\":[\"named\"]}",
+          "duration": 0.28590000000002647,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects incomplete decoded module-name metadata: (module (@custom \"name\" \"\\00\\06\\05name\"))",
+          "status": "passed",
+          "title": "rejects incomplete decoded module-name metadata: (module (@custom \"name\" \"\\00\\06\\05name\"))",
+          "duration": 0.5421000000000049,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects incomplete decoded module-name metadata: (module (@custom \"name\" \"\\00\\05\\05name\"))",
+          "status": "passed",
+          "title": "rejects incomplete decoded module-name metadata: (module (@custom \"name\" \"\\00\\05\\05name\"))",
+          "duration": 0.22849999999999682,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "frames custom section names at their NUL-terminated objdump display",
+          "status": "passed",
+          "title": "frames custom section names at their NUL-terminated objdump display",
+          "duration": 0.5983999999999696,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "preserves leading U+FEFF as custom-name data, not a debug-name marker",
+          "status": "passed",
+          "title": "preserves leading U+FEFF as custom-name data, not a debug-name marker",
+          "duration": 1.1409000000000447,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "extracts escaped WAT import/export forms while retaining multiline producer text",
+          "status": "passed",
+          "title": "extracts escaped WAT import/export forms while retaining multiline producer text",
+          "duration": 1.5190000000000055,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "keeps exact local, ambiguous URL, computed and unparseable glue distinct",
+          "status": "passed",
+          "title": "keeps exact local, ambiguous URL, computed and unparseable glue distinct",
+          "duration": 6.139200000000017,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793116003383,
+      "endTime": 1793116003399.1392,
+      "status": "passed",
+      "message": "",
+      "name": "<SOURCE>/src/wasm/WabtOutput.test.ts"
+    }
+  ]
+}
