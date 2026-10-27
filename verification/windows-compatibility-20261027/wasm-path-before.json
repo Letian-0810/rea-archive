@@ -1,0 +1,163 @@
+{
+  "numTotalTestSuites": 1,
+  "numPassedTestSuites": 0,
+  "numFailedTestSuites": 1,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 12,
+  "numPassedTests": 0,
+  "numFailedTests": 1,
+  "numPendingTests": 11,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793115957684,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "retains real WABT section ranges, custom section identity and original header output",
+          "status": "skipped",
+          "title": "retains real WABT section ranges, custom section identity and original header output",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "accepts an unpadded DataCount row and still rejects malformed output and bad ranges",
+          "status": "skipped",
+          "title": "accepts an unpadded DataCount row and still rejects malformed output and bad ranges",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "bounds section header bytes while accepting a five-byte size LEB",
+          "status": "skipped",
+          "title": "bounds section header bytes while accepting a five-byte size LEB",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[],\"decoded\":[\"named\"]}",
+          "status": "skipped",
+          "title": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[],\"decoded\":[\"named\"]}",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[\"named\"],\"decoded\":[]}",
+          "status": "skipped",
+          "title": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[\"named\"],\"decoded\":[]}",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[\"other\"],\"decoded\":[\"named\"]}",
+          "status": "skipped",
+          "title": "rejects module-name headers inconsistent with decoded WAT: {\"displayed\":[\"other\"],\"decoded\":[\"named\"]}",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects incomplete decoded module-name metadata: (module (@custom \"name\" \"\\00\\06\\05name\"))",
+          "status": "skipped",
+          "title": "rejects incomplete decoded module-name metadata: (module (@custom \"name\" \"\\00\\06\\05name\"))",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "rejects incomplete decoded module-name metadata: (module (@custom \"name\" \"\\00\\05\\05name\"))",
+          "status": "skipped",
+          "title": "rejects incomplete decoded module-name metadata: (module (@custom \"name\" \"\\00\\05\\05name\"))",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "frames custom section names at their NUL-terminated objdump display",
+          "status": "skipped",
+          "title": "frames custom section names at their NUL-terminated objdump display",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "preserves leading U+FEFF as custom-name data, not a debug-name marker",
+          "status": "skipped",
+          "title": "preserves leading U+FEFF as custom-name data, not a debug-name marker",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "extracts escaped WAT import/export forms while retaining multiline producer text",
+          "status": "skipped",
+          "title": "extracts escaped WAT import/export forms while retaining multiline producer text",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "keeps exact local, ambiguous URL, computed and unparseable glue distinct",
+          "status": "failed",
+          "title": "keeps exact local, ambiguous URL, computed and unparseable glue distinct",
+          "duration": 12.573300000000017,
+          "failureMessages": [
+            "AssertionError: expected [ …(4) ] to match object [ …(4) ]\n(7 matching properties omitted from actual)\n    at Proxy.<anonymous> (file:///<SOURCE>/node_modules/vitest/dist/chunks/index.C4tKZ0yW.js:2050:10)\n    at Proxy.<anonymous> (file:///<SOURCE>/node_modules/vitest/dist/chunks/index.C4tKZ0yW.js:1944:14)\n    at Proxy.methodWrapper (file:///<SOURCE>/node_modules/chai/index.js:1737:25)\n    at <SOURCE>/src/wasm/WabtOutput.test.ts:266:29\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:1628:35\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:2783:26\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:3321:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:3316:10)\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:3301:20"
+          ],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793115958058,
+      "endTime": 1793115958070.5732,
+      "status": "failed",
+      "message": "",
+      "name": "<SOURCE>/src/wasm/WabtOutput.test.ts"
+    }
+  ]
+}

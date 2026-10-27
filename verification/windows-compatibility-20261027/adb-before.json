@@ -1,0 +1,427 @@
+{
+  "numTotalTestSuites": 2,
+  "numPassedTestSuites": 0,
+  "numFailedTestSuites": 2,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 32,
+  "numPassedTests": 0,
+  "numFailedTests": 1,
+  "numPendingTests": 31,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793115892737,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/local/tmp/notes.txt",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /data/local/tmp/notes.txt",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/data/com.example/databases/app.db",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /data/data/com.example/databases/app.db",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /sdcard/My Notes.txt",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /sdcard/My Notes.txt",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /system/etc/hosts",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /system/etc/hosts",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/local/tmp/split_config.arm64_v8a.apk",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /data/local/tmp/split_config.arm64_v8a.apk",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/local/tmp/résumé.xml",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /data/local/tmp/résumé.xml",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/local/tmp/a-b_c.d",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /data/local/tmp/a-b_c.d",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/local/tmp/a\\b",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /data/local/tmp/a\\b",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/local/tmp/report:2024",
+          "status": "failed",
+          "title": "accepts the POSIX device path /data/local/tmp/report:2024",
+          "duration": 5.7853999999999814,
+          "failureMessages": [
+            "AssertionError: expected { ok: false, …(1) } to deeply equal { ok: true, fileName: 'report:2024' }\n    at <SOURCE>/src/adb/AdbHostFileName.test.ts:22:41\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:2868:91\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:1628:35\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:2783:26\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:3321:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:3316:10)\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:3301:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:3259:10)"
+          ],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/local/tmp/a*b.txt",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /data/local/tmp/a*b.txt",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName accepts the POSIX device path /data/local/tmp/report",
+          "status": "skipped",
+          "title": "accepts the POSIX device path /data/local/tmp/report",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName refuses / as empty_file_name",
+          "status": "skipped",
+          "title": "refuses / as empty_file_name",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName refuses data/local/tmp/file as not_absolute_path",
+          "status": "skipped",
+          "title": "refuses data/local/tmp/file as not_absolute_path",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName refuses /data/local/tmp/ as empty_file_name",
+          "status": "skipped",
+          "title": "refuses /data/local/tmp/ as empty_file_name",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName refuses /data/local/tmp/.. as dot_segment",
+          "status": "skipped",
+          "title": "refuses /data/local/tmp/.. as dot_segment",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName refuses /data/local/tmp/. as dot_segment",
+          "status": "skipped",
+          "title": "refuses /data/local/tmp/. as dot_segment",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName refuses /data\u0000/local/tmp/file as unsupported_character",
+          "status": "skipped",
+          "title": "refuses /data\u0000/local/tmp/file as unsupported_character",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName refuses /data/local/tmp/a\u0000b as unsupported_character",
+          "status": "skipped",
+          "title": "refuses /data/local/tmp/a\u0000b as unsupported_character",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/a\\b on Windows as unsupported_character",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/a\\b on Windows as unsupported_character",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/ta\tb on Windows as unsupported_character",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/ta\tb on Windows as unsupported_character",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/CON on Windows as reserved_name",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/CON on Windows as reserved_name",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/nul.txt on Windows as reserved_name",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/nul.txt on Windows as reserved_name",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/com1 on Windows as reserved_name",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/com1 on Windows as reserved_name",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/LPT9 on Windows as reserved_name",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/LPT9 on Windows as reserved_name",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/COM¹.txt on Windows as reserved_name",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/COM¹.txt on Windows as reserved_name",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/lpt³ on Windows as reserved_name",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/lpt³ on Windows as reserved_name",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/report:2024 on Windows as unsupported_character",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/report:2024 on Windows as unsupported_character",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/report. on Windows as trailing_dot_or_space",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/report. on Windows as trailing_dot_or_space",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/report  on Windows as trailing_dot_or_space",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/report  on Windows as trailing_dot_or_space",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/a*b.txt on Windows as unsupported_character",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/a*b.txt on Windows as unsupported_character",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName rejects /data/local/tmp/a?b.txt on Windows as unsupported_character",
+          "status": "skipped",
+          "title": "rejects /data/local/tmp/a?b.txt on Windows as unsupported_character",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "adbHostFileName"
+          ],
+          "fullName": "adbHostFileName does not impose non-Windows control restrictions on Windows filenames",
+          "status": "skipped",
+          "title": "does not impose non-Windows control restrictions on Windows filenames",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793115893069,
+      "endTime": 1793115893074.7854,
+      "status": "failed",
+      "message": "",
+      "name": "<SOURCE>/src/adb/AdbHostFileName.test.ts"
+    }
+  ]
+}

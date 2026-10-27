@@ -1,0 +1,233 @@
+{
+  "numTotalTestSuites": 1,
+  "numPassedTestSuites": 0,
+  "numFailedTestSuites": 1,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 19,
+  "numPassedTests": 0,
+  "numFailedTests": 1,
+  "numPendingTests": 18,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793116174321,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "returns actionable unavailable without creating a workspace when tools are absent",
+          "status": "skipped",
+          "title": "returns actionable unavailable without creating a workspace when tools are absent",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "retries a retained input descriptor before admitting the next WABT operation",
+          "status": "skipped",
+          "title": "retries a retained input descriptor before admitting the next WABT operation",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "reports an unavailable private runtime root with retryable=false without a misleading WABT remediation",
+          "status": "skipped",
+          "title": "reports an unavailable private runtime root with retryable=false without a misleading WABT remediation",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "reports an unavailable private runtime root with retryable=true without a misleading WABT remediation",
+          "status": "skipped",
+          "title": "reports an unavailable private runtime root with retryable=true without a misleading WABT remediation",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains success outcome",
+          "status": "failed",
+          "title": "owns private artifact bytes and retains success outcome",
+          "duration": 140.9787,
+          "failureMessages": [
+            "Error: {\"capturedOutput\":{\"stdout\":\"\",\"stderr\":\"\\r\\n  #  <PINNED_NODE>[17412]: std::shared_ptr<InitializationResultImpl> __cdecl node::InitializeOncePerProcessInternal(const std::vector<std::string> &, ProcessInitializationFlags::Flags) at src\\\\node.cc:1224\\r\\n  #  Assertion failed: ncrypto::CSPRNG(nullptr, 0)\\r\\n\\r\\n----- Native stack trace -----\\r\\n\\r\\n 1: 00007FF7D2F1342A node::MultiIsolatePlatform::DisposeIsolate+749418\\r\\n 2: 00007FF7D2F74D73 node::InitializeOncePerProcess+3171\\r\\n 3: 00007FF7D2F7510D node::Start+445\\r\\n 4: 00007FF7D302D222 node::AsyncResource::CallbackScope::CallbackScope+610\\r\\n 5: 00007FF7D324BBB4 node::AsyncResource::CallbackScope::CallbackScope+2223092\\r\\n 6: 00007FFB98BADDA7 BaseThreadInitThunk+23\\r\\n 7: 00007FFB99D5EE4C RtlUserThreadStart+44\\r\\n\",\"truncated\":false},\"cleanupIncomplete\":false,\"cleanupResources\":[],\"userMessage\":\"Configured WABT could not start. Check executable/interpreter access and WABT 1.0.42 profile; inspect retained diagnostics.\",\"providerId\":\"wabt-artifact\",\"operation\":\"inspect_wasm_artifact\",\"reason\":\"Command failed; inspect its exit status and diagnostics.\",\"_tag\":\"AnalysisCapabilityUnavailableError\",\"retryable\":false}\n    at <SOURCE>/src/wasm/WabtArtifactProvider.test.ts:433:47\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at runNextTicks (node:internal/process/task_queues:69:3)\n    at processTimers (node:internal/timers:538:9)\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:2783:20"
+          ],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains invalid outcome",
+          "status": "skipped",
+          "title": "owns private artifact bytes and retains invalid outcome",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains malformed outcome",
+          "status": "skipped",
+          "title": "owns private artifact bytes and retains malformed outcome",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains timeout outcome",
+          "status": "skipped",
+          "title": "owns private artifact bytes and retains timeout outcome",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains cancelled outcome",
+          "status": "skipped",
+          "title": "owns private artifact bytes and retains cancelled outcome",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains cleanup outcome",
+          "status": "skipped",
+          "title": "owns private artifact bytes and retains cleanup outcome",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains changed-snapshot outcome",
+          "status": "skipped",
+          "title": "owns private artifact bytes and retains changed-snapshot outcome",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains malformed-wat outcome",
+          "status": "skipped",
+          "title": "owns private artifact bytes and retains malformed-wat outcome",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "owns private artifact bytes and retains wat-warning outcome",
+          "status": "skipped",
+          "title": "owns private artifact bytes and retains wat-warning outcome",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "reports WABT output beyond the budget as a resource constraint with a bounded excerpt",
+          "status": "skipped",
+          "title": "reports WABT output beyond the budget as a resource constraint with a bounded excerpt",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "does not attribute wasm-objdump output to a wasm2wat launch failure",
+          "status": "skipped",
+          "title": "does not attribute wasm-objdump output to a wasm2wat launch failure",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "bounds an oversized stderr to an excerpt",
+          "status": "skipped",
+          "title": "bounds an oversized stderr to an excerpt",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "cuts the excerpt on a code point boundary",
+          "status": "skipped",
+          "title": "cuts the excerpt on a code point boundary",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "bounds the excerpt when cleanup also fails after the output budget",
+          "status": "skipped",
+          "title": "bounds the excerpt when cleanup also fails after the output budget",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "does not blame the input when a version probe exceeds the budget",
+          "status": "skipped",
+          "title": "does not blame the input when a version probe exceeds the budget",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793116174996,
+      "endTime": 1793116175136.9788,
+      "status": "failed",
+      "message": "",
+      "name": "<SOURCE>/src/wasm/WabtArtifactProvider.test.ts"
+    }
+  ]
+}

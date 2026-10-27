@@ -1,0 +1,10 @@
+{
+  "node": "v24.18.0",
+  "platform": "win32",
+  "architecture": "x64",
+  "testSha256": "61339459c6f74a5a647ab0b975964d69c9896c79d064b6a392ced12fed700228",
+  "scope": "authored fixtures and native oracle only; full CLI/MCP case not run",
+  "passed": false,
+  "code": "ERR_UNSUPPORTED_ESM_URL_SCHEME",
+  "detail": "Command failed: <PINNED_NODE> --input-type=module --eval const module = await import(process.argv[1]); console.log(JSON.stringify(module.default())); <TEST_ROOT>\\0\\parser.mjs\nnode:internal/modules/esm/load:193\r\n    throw new ERR_UNSUPPORTED_ESM_URL_SCHEME(parsed, schemes);\r\n          ^\r\n\r\nError [ERR_UNSUPPORTED_ESM_URL_SCHEME]: Only URLs with a scheme in: file, data, and node are supported by the default ESM loader. On Windows, absolute paths must be valid file:// URLs. Received protocol 'c:'\r\n    at throwIfUnsupportedURLScheme (node:internal/modules/esm/load:193:11)\r\n    at defaultLoadSync (node:internal/modules/esm/load:146:3)\r\n    at #loadAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:802:12)\r\n    at #loadSync (node:internal/modules/esm/loader:834:53)\r\n    at ModuleLoader.load (node:internal/modules/esm/loader:783:26)\r\n    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:494:31)\r\n    at #getOrC"
+}

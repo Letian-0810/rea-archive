@@ -1,0 +1,331 @@
+{
+  "numTotalTestSuites": 4,
+  "numPassedTestSuites": 2,
+  "numFailedTestSuites": 2,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 24,
+  "numPassedTests": 0,
+  "numFailedTests": 1,
+  "numPendingTests": 23,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793116160746,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects treats an empty XDG config home as unset for OpenCode setup",
+          "status": "skipped",
+          "title": "treats an empty XDG config home as unset for OpenCode setup",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects registers, reads back, and uninstalls opencode",
+          "status": "failed",
+          "title": "registers, reads back, and uninstalls opencode",
+          "duration": 26.331999999999994,
+          "failureMessages": [
+            "AssertionError: {\"status\":\"failed\",\"reason\":\"write\"}: expected 'failed' to be 'configured' // Object.is equality\n    at <SOURCE>/tests/boundary/filesystem/clientConfigurationDialects.test.ts:74:59\n    at file:///<SOURCE>/node_modules/vitest/dist/chunks/run.BTlFXlnv.js:2783:20"
+          ],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects registers, reads back, and uninstalls antigravity",
+          "status": "skipped",
+          "title": "registers, reads back, and uninstalls antigravity",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects registers, reads back, and uninstalls copilot_cli",
+          "status": "skipped",
+          "title": "registers, reads back, and uninstalls copilot_cli",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects registers, reads back, and uninstalls commandcode",
+          "status": "skipped",
+          "title": "registers, reads back, and uninstalls commandcode",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects registers, reads back, and uninstalls vscode",
+          "status": "skipped",
+          "title": "registers, reads back, and uninstalls vscode",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects registers, reads back, and uninstalls devin",
+          "status": "skipped",
+          "title": "registers, reads back, and uninstalls devin",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects registers, reads back, and uninstalls omp",
+          "status": "skipped",
+          "title": "registers, reads back, and uninstalls omp",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects registers, reads back, and uninstalls pi",
+          "status": "skipped",
+          "title": "registers, reads back, and uninstalls pi",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects preserves OpenCode JSONC comments and sibling registrations during update and removal",
+          "status": "skipped",
+          "title": "preserves OpenCode JSONC comments and sibling registrations during update and removal",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "additional client configuration dialects"
+          ],
+          "fullName": "additional client configuration dialects rejects malformed OpenCode JSONC without creating a backup or changing bytes",
+          "status": "skipped",
+          "title": "rejects malformed OpenCode JSONC without creating a backup or changing bytes",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "OpenCode V2 native server table"
+          ],
+          "fullName": "OpenCode V2 native server table registers in mcp.servers, replaces REA's V1 entry, and uninstalls",
+          "status": "skipped",
+          "title": "registers in mcp.servers, replaces REA's V1 entry, and uninstalls",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "OpenCode V2 native server table"
+          ],
+          "fullName": "OpenCode V2 native server table updates and removes REA's entry after OpenCode migrates it to mcp.servers",
+          "status": "skipped",
+          "title": "updates and removes REA's entry after OpenCode migrates it to mcp.servers",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "OpenCode V2 native server table"
+          ],
+          "fullName": "OpenCode V2 native server table reports and removes a V1 entry that OpenCode still loads beside mcp.servers",
+          "status": "skipped",
+          "title": "reports and removes a V1 entry that OpenCode still loads beside mcp.servers",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "OpenCode V2 native server table"
+          ],
+          "fullName": "OpenCode V2 native server table treats a V2 table holding a server named type as native",
+          "status": "skipped",
+          "title": "treats a V2 table holding a server named type as native",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "OpenCode V2 native server table"
+          ],
+          "fullName": "OpenCode V2 native server table keeps a V1 server named servers in the V1 table",
+          "status": "skipped",
+          "title": "keeps a V1 server named servers in the V1 table",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "platform-aware client config paths"
+          ],
+          "fullName": "platform-aware client config paths resolves VS Code user MCP path for darwin",
+          "status": "skipped",
+          "title": "resolves VS Code user MCP path for darwin",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "platform-aware client config paths"
+          ],
+          "fullName": "platform-aware client config paths resolves VS Code user MCP path for linux",
+          "status": "skipped",
+          "title": "resolves VS Code user MCP path for linux",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "platform-aware client config paths"
+          ],
+          "fullName": "platform-aware client config paths resolves VS Code user MCP path for win32",
+          "status": "skipped",
+          "title": "resolves VS Code user MCP path for win32",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "platform-aware client config paths"
+          ],
+          "fullName": "platform-aware client config paths resolves VS Code user MCP path for linux",
+          "status": "skipped",
+          "title": "resolves VS Code user MCP path for linux",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "platform-aware client config paths"
+          ],
+          "fullName": "platform-aware client config paths honors Grok Build and Grok Bot configuration roots",
+          "status": "skipped",
+          "title": "honors Grok Build and Grok Bot configuration roots",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "platform-aware client config paths"
+          ],
+          "fullName": "platform-aware client config paths honors Copilot CLI and Devin platform configuration roots",
+          "status": "skipped",
+          "title": "honors Copilot CLI and Devin platform configuration roots",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "platform-aware client config paths"
+          ],
+          "fullName": "platform-aware client config paths prefers an existing OpenCode JSONC file and honors explicit harness roots",
+          "status": "skipped",
+          "title": "prefers an existing OpenCode JSONC file and honors explicit harness roots",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "platform-aware client config paths"
+          ],
+          "fullName": "platform-aware client config paths recognizes prior exact REA releases while rejecting foreign package commands",
+          "status": "skipped",
+          "title": "recognizes prior exact REA releases while rejecting foreign package commands",
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793116161447,
+      "endTime": 1793116161473.332,
+      "status": "failed",
+      "message": "",
+      "name": "<SOURCE>/tests/boundary/filesystem/clientConfigurationDialects.test.ts"
+    }
+  ]
+}

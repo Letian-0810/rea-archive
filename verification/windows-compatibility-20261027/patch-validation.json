@@ -1,0 +1,35 @@
+{
+  "appliesToReviewedBase": [
+    {
+      "path": "src/adb/AdbHostFileName.test.ts",
+      "appliesExactly": true
+    },
+    {
+      "path": "src/wasm/WabtOutput.test.ts",
+      "appliesExactly": true
+    },
+    {
+      "path": "tests/acceptance/applications/applicationWorkflowCli.test.ts",
+      "appliesExactly": true
+    }
+  ],
+  "onlyChangedSourceFiles": [
+    "src/adb/AdbHostFileName.test.ts",
+    "src/wasm/WabtOutput.test.ts",
+    "tests/acceptance/applications/applicationWorkflowCli.test.ts"
+  ],
+  "patchSha256": "f29b3dbb9dc6ca16fcd51812de78f48bc79987d45df6e94222015bf9f18be6af",
+  "formatCheck": {
+    "tool": "oxfmt 0.72.0",
+    "files": 3,
+    "threads": 1,
+    "passed": true
+  },
+  "gitApplyCheck": {
+    "passed": true,
+    "whitespace": "error",
+    "files": 3,
+    "insertions": 14,
+    "deletions": 6
+  }
+}
